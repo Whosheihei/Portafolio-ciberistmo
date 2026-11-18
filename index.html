@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciberseguridad | Presentación</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --pink: #ff65a3;
+  --purple: #a78bfa;
+  --blue: #38bdf8;
+  --yellow: #facc15;
+  --dark: #17152f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark);
+}
+
+.reveal {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.reveal .slides section {
+  min-height: 90%;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 2.2em;
+}
+
+.reveal h2 {
+  font-size: 1.55em;
+  margin-bottom: 25px;
+}
+
+.reveal p, .reveal li {
+  font-size: .72em;
+  line-height: 1.6;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff65a3, #a78bfa, #38bdf8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #d5d0ee;
+  font-size: .85em !important;
+}
+
+.tag {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 30px;
+  background: #ffffff20;
+  border: 1px solid #ffffff35;
+  font-size: .5em;
+  letter-spacing: 2px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+  max-width: 950px;
+  margin: 20px auto;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 20px;
+  background: #ffffff13;
+  border: 1px solid #ffffff25;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: .85em;
+  margin: 8px 0;
+}
+
+.card p {
+  color: #ded9f5;
+  font-size: .58em;
+  margin: 0;
+}
+
+.icon {
+  font-size: 2em;
+}
+
+.pink { border-top: 5px solid var(--pink); }
+.blue { border-top: 5px solid var(--blue); }
+.purple { border-top: 5px solid var(--purple); }
+.yellow { border-top: 5px solid var(--yellow); }
+
+.highlight {
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.big-icon {
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.reveal .progress {
+  color: var(--pink);
+}
+
+.reveal .controls {
+  color: var(--blue);
+}
+
+.footer {
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+  font-size: 12px;
+  color: #aaa2ca;
+}
+
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr; }
+  .reveal h1 { font-size: 1.5em; }
+  .reveal h2 { font-size: 1.1em; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- DIAPOSITIVA 1 -->
+<section data-background-gradient="linear-gradient(135deg, #25164c, #703caa, #e65c9c)">
+  <span class="tag">TECNOLOGÍA · SEGURIDAD · FUTURO</span>
+  <div class="big-icon">🛡️</div>
+  <h1 class="gradient-text">CIBERSEGURIDAD</h1>
+  <p class="subtitle">Protegiendo nuestro mundo digital</p>
+  <br>
+  <p>Presentado por: <span class="highlight">Heidi Zeng</span></p>
+  <p style="font-size:.55em">Explorando la seguridad en Internet</p>
+</section>
+
+<!-- DIAPOSITIVA 2 -->
+<section data-background-gradient="linear-gradient(135deg, #172554, #4338a8, #9333a8)">
+  <span class="tag">01 · CONCEPTO</span>
+  <h2>¿Qué es la <span class="gradient-text">ciberseguridad</span>?</h2>
+  <div class="big-icon">💻🔐</div>
+  <p>
+    La ciberseguridad es la práctica de proteger
+    dispositivos, sistemas, redes y datos frente
+    a amenazas digitales y accesos no autorizados.
+  </p>
+  <div class="card-grid">
+    <div class="card pink">
+      <h3>🔒 Protección</h3>
+      <p>Evita que personas no autorizadas accedan a nuestra información.</p>
+    </div>
+    <div class="card blue">
+      <h3>🌐 Seguridad</h3>
+      <p>Ayuda a mantener seguros nuestros espacios digitales.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIAPOSITIVA 3 -->
+<section data-background-gradient="linear-gradient(135deg, #164e63, #2563a6, #7045a3)">
+  <span class="tag">02 · IMPORTANCIA</span>
+  <h2>¿Por qué es importante?</h2>
+  <div class="card-grid">
+    <div class="card pink">
+      <div class="icon">👤</div>
+      <h3>Privacidad</h3>
+      <p>Protege nuestros datos personales y conversaciones.</p>
+    </div>
+    <div class="card blue">
+      <div class="icon">💳</div>
+      <h3>Información financiera</h3>
+      <p>Ayuda a proteger cuentas y datos bancarios.</p>
+    </div>
+    <div class="card purple">
+      <div class="icon">🏢</div>
+      <h3>Organizaciones</h3>
+      <p>Protege los sistemas y archivos de empresas e instituciones.</p>
+    </div>
+    <div class="card yellow">
+      <div class="icon">📱</div>
+      <h3>Dispositivos</h3>
+      <p>Reduce los riesgos al utilizar celulares y computadoras.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIAPOSITIVA 4 -->
+<section data-background-gradient="linear-gradient(135deg, #701f54, #9b347d, #4338a8)">
+  <span class="tag">03 · AMENAZAS</span>
+  <h2>Principales amenazas digitales</h2>
+  <div class="card-grid">
+    <div class="card pink">
+      <div class="icon">🦠</div>
+      <h3>Malware</h3>
+      <p>Software malicioso diseñado para dañar dispositivos o robar información.</p>
+    </div>
+    <div class="card yellow">
+      <div class="icon">🎣</div>
+      <h3>Phishing</h3>
+      <p>Mensajes falsos que intentan engañar a las personas para obtener sus datos.</p>
+    </div>
+    <div class="card blue">
+      <div class="icon">🔓</div>
+      <h3>Robo de cuentas</h3>
+      <p>Acceso no autorizado a perfiles y servicios digitales.</p>
+    </div>
+    <div class="card purple">
+      <div class="icon">🕵️</div>
+      <h3>Espionaje digital</h3>
+      <p>Obtención de información privada sin autorización.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIAPOSITIVA 5 -->
+<section data-background-gradient="linear-gradient(135deg, #312e81, #6d28a8, #be408b)">
+  <span class="tag">04 · CIBERATAQUES</span>
+  <h2>Tipos de ciberataques</h2>
+  <div class="card-grid">
+    <div class="card pink">
+      <div class="icon">🎣</div>
+      <h3>Phishing</h3>
+      <p>Engaño mediante correos, mensajes o páginas falsas.</p>
+    </div>
+    <div class="card blue">
+      <div class="icon">🔐</div>
+      <h3>Ransomware</h3>
+      <p>Malware que bloquea o cifra información y exige un rescate.</p>
+    </div>
+    <div class="card purple">
+      <div class="icon">🌊</div>
+      <h3>DDoS</h3>
+      <p>Intento de interrumpir un servicio saturándolo con tráfico.</p>
+    </div>
+    <div class="card yellow">
+      <div class="icon">🔑</div>
+      <h3>Fuerza bruta</h3>
+      <p>Intentos repetidos de adivinar credenciales de acceso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIAPOSITIVA 6 -->
+<section data-background-gradient="linear-gradient(135deg, #075985, #2563a6, #7c3aed)">
+  <span class="tag">05 · PREVENCIÓN</span>
+  <h2>¿Cómo podemos protegernos?</h2>
+  <div class="card-grid">
+    <div class="card pink">
+      <div class="icon">🔑</div>
+      <h3>Contraseñas seguras</h3>
+      <p>Utilizar contraseñas largas y diferentes para cada cuenta.</p>
+    </div>
+    <div class="card blue">
+      <div class="icon">📲</div>
+      <h3>Verificación en dos pasos</h3>
+      <p>Activar una segunda capa de seguridad.</p>
+    </div>
+    <div class="card purple">
+      <div class="icon">🚫</div>
+      <h3>Evitar enlaces sospechosos</h3>
+      <p>Verificar los mensajes antes de abrir enlaces o archivos.</p>
+    </div>
+    <div class="card yellow">
+      <div class="icon">🔄</div>
+      <h3>Actualizar dispositivos</h3>
+      <p>Mantener el sistema y las aplicaciones actualizados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIAPOSITIVA 7 -->
+<section data-background-gradient="linear-gradient(135deg, #7e22ce, #db2777, #ea7b42)">
+  <span class="tag">06 · REFLEXIÓN FINAL</span>
+  <div class="big-icon">🌎🛡️</div>
+  <h1>¡La seguridad digital comienza contigo!</h1>
+  <p>
+    La ciberseguridad es fundamental para proteger
+    nuestra privacidad, identidad e información.
+  </p>
+  <p class="subtitle">
+    Cada decisión responsable en Internet
+    contribuye a un mundo digital más seguro.
+  </p>
+  <br>
+  <h2 class="gradient-text">¡GRACIAS POR SU ATENCIÓN!</h2>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: true,
+  transition: 'slide',
+  controls: true,
+  progress: true,
+  center: true,
+  width: 1100,
+  height: 700
+});
+</script>
+
+</body>
+</html>
