@@ -1,153 +1,204 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ciberseguridad | Presentación</title>
+<title>Mi portafolio | Ciberseguridad</title>
 
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --pink: #ff65a3;
-  --purple: #a78bfa;
-  --blue: #38bdf8;
-  --yellow: #facc15;
-  --dark: #17152f;
+  --pink: #f5a6cb;
+  --pink-dark: #d96da4;
+  --blue: #9cddf5;
+  --blue-dark: #55aeca;
+  --white: #ffffff;
+  --text: #53677d;
+  --background: #fff8fc;
 }
 
 * { box-sizing: border-box; }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--dark);
+  background: var(--background);
+  font-family: 'Nunito', sans-serif;
 }
 
 .reveal {
-  font-family: 'Poppins', sans-serif;
-  color: white;
-}
-
-.reveal .slides section {
-  min-height: 90%;
+  color: var(--text);
+  font-family: 'Nunito', sans-serif;
 }
 
 .reveal h1, .reveal h2, .reveal h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
   text-transform: none;
+  color: #d96da4;
 }
 
-.reveal h1 {
-  font-size: 2.2em;
-}
-
-.reveal h2 {
-  font-size: 1.55em;
-  margin-bottom: 25px;
-}
+.reveal h1 { font-size: 2.1em; }
+.reveal h2 { font-size: 1.5em; }
+.reveal h3 { font-size: .85em; }
 
 .reveal p, .reveal li {
-  font-size: .72em;
+  font-size: .65em;
   line-height: 1.6;
 }
 
-.gradient-text {
-  background: linear-gradient(90deg, #ff65a3, #a78bfa, #38bdf8);
-  -webkit-background-clip: text;
-  color: transparent;
+.reveal .slides section {
+  text-align: center;
+  padding: 25px;
 }
 
-.subtitle {
-  color: #d5d0ee;
-  font-size: .85em !important;
+.reveal .slides section .slides {
+  text-align: center;
 }
 
 .tag {
   display: inline-block;
-  padding: 9px 20px;
+  background: #ffe4f1;
+  color: #c45e91;
   border-radius: 30px;
-  background: #ffffff20;
-  border: 1px solid #ffffff35;
-  font-size: .5em;
+  padding: 8px 20px;
+  font-size: .45em;
+  font-weight: 900;
   letter-spacing: 2px;
 }
 
-.card-grid {
+.subtitle {
+  color: #7697a9;
+  font-size: .8em !important;
+}
+
+.gradient {
+  background: linear-gradient(90deg,#e77eaf,#65c4e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 17px;
-  max-width: 950px;
-  margin: 20px auto;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+  max-width: 1000px;
+  margin: 30px auto;
 }
 
 .card {
-  padding: 22px;
-  border-radius: 20px;
-  background: #ffffff13;
-  border: 1px solid #ffffff25;
-  text-align: left;
+  background: white;
+  padding: 22px 15px;
+  border-radius: 22px;
+  border: 2px solid #f9d7e9;
+  box-shadow: 0 7px 18px #e8aaca25;
+}
+
+.card.blue {
+  border-color: #c7ecfa;
 }
 
 .card h3 {
-  font-size: .85em;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .card p {
-  color: #ded9f5;
-  font-size: .58em;
-  margin: 0;
+  font-size: .54em;
+  color: #71869a;
 }
 
-.icon {
-  font-size: 2em;
+.emoji {
+  font-size: 2.4em;
 }
 
-.pink { border-top: 5px solid var(--pink); }
-.blue { border-top: 5px solid var(--blue); }
-.purple { border-top: 5px solid var(--purple); }
-.yellow { border-top: 5px solid var(--yellow); }
-
-.highlight {
-  color: var(--pink);
-  font-weight: 700;
+.info {
+  background: white;
+  border-radius: 24px;
+  padding: 20px;
+  max-width: 750px;
+  margin: 15px auto;
+  border: 2px solid #f5d8e9;
+  box-shadow: 0 8px 20px #e8aaca20;
 }
 
-.big-icon {
-  font-size: 4em;
-  margin-bottom: 15px;
+.info.blue {
+  border-color: #c7ecfa;
 }
 
-.reveal ul {
+.info p {
+  color: #657e91;
+}
+
+.name {
+  font-size: 2.7em !important;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.social {
   display: inline-block;
-  text-align: left;
+  color: #bf6294;
+  background: #ffe9f3;
+  border-radius: 15px;
+  padding: 12px 22px;
+  margin: 7px;
+  text-decoration: none;
+  font-size: .65em;
+  font-weight: 800;
 }
 
-.reveal .progress {
-  color: var(--pink);
+.social:hover {
+  background: #c8edfa;
+}
+
+.cat {
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated;
+}
+
+.cat.small {
+  width: 65px;
+  height: 65px;
+}
+
+.cat-float {
+  margin: 10px auto;
+}
+
+.decoration {
+  color: #eea2c6;
+  font-size: 1.1em;
 }
 
 .reveal .controls {
-  color: var(--blue);
+  color: #db81ae;
 }
 
-.footer {
+.reveal .progress {
+  color: #76cde9;
+}
+
+.page-number {
   position: fixed;
   bottom: 15px;
-  left: 20px;
+  right: 25px;
   font-size: 12px;
-  color: #aaa2ca;
+  color: #bb8da9;
 }
 
-@media (max-width: 600px) {
-  .card-grid { grid-template-columns: 1fr; }
+@media(max-width:650px) {
+  .cards { grid-template-columns: 1fr; gap: 8px; }
+  .card { padding: 12px; }
+  .card .emoji { font-size: 1.7em; }
   .reveal h1 { font-size: 1.5em; }
-  .reveal h2 { font-size: 1.1em; }
+  .reveal h2 { font-size: 1.2em; }
+  .reveal p { font-size: .65em; }
+  .name { font-size: 2em !important; }
 }
 </style>
 </head>
@@ -157,182 +208,247 @@ body {
 <div class="reveal">
 <div class="slides">
 
-<!-- DIAPOSITIVA 1 -->
-<section data-background-gradient="linear-gradient(135deg, #25164c, #703caa, #e65c9c)">
-  <span class="tag">TECNOLOGÍA · SEGURIDAD · FUTURO</span>
-  <div class="big-icon">🛡️</div>
-  <h1 class="gradient-text">CIBERSEGURIDAD</h1>
-  <p class="subtitle">Protegiendo nuestro mundo digital</p>
-  <br>
-  <p>Presentado por: <span class="highlight">Heidi Zeng</span></p>
-  <p style="font-size:.55em">Explorando la seguridad en Internet</p>
-</section>
+<!-- TODAS LAS PÁGINAS SON VERTICALES -->
+<section>
 
-<!-- DIAPOSITIVA 2 -->
-<section data-background-gradient="linear-gradient(135deg, #172554, #4338a8, #9333a8)">
-  <span class="tag">01 · CONCEPTO</span>
-  <h2>¿Qué es la <span class="gradient-text">ciberseguridad</span>?</h2>
-  <div class="big-icon">💻🔐</div>
-  <p>
-    La ciberseguridad es la práctica de proteger
-    dispositivos, sistemas, redes y datos frente
-    a amenazas digitales y accesos no autorizados.
-  </p>
-  <div class="card-grid">
-    <div class="card pink">
-      <h3>🔒 Protección</h3>
-      <p>Evita que personas no autorizadas accedan a nuestra información.</p>
-    </div>
-    <div class="card blue">
-      <h3>🌐 Seguridad</h3>
-      <p>Ayuda a mantener seguros nuestros espacios digitales.</p>
-    </div>
+<!-- PÁGINA 1: PRESENTACIÓN -->
+<section data-background-color="#fff3f9">
+
+  <span class="tag">♡ MI PORTAFOLIO DIGITAL ♡</span>
+
+  <svg class="cat cat-float" viewBox="0 0 100 100">
+    <g fill="#f5a6cb">
+      <rect x="15" y="5" width="20" height="20"/>
+      <rect x="65" y="5" width="20" height="20"/>
+      <rect x="10" y="25" width="80" height="50"/>
+      <rect x="20" y="75" width="60" height="10"/>
+    </g>
+    <g fill="#ffffff">
+      <rect x="25" y="35" width="15" height="15"/>
+      <rect x="60" y="35" width="15" height="15"/>
+      <rect x="43" y="55" width="15" height="8"/>
+    </g>
+    <g fill="#52677d">
+      <rect x="30" y="40" width="7" height="7"/>
+      <rect x="65" y="40" width="7" height="7"/>
+      <rect x="46" y="58" width="5" height="4"/>
+    </g>
+  </svg>
+
+  <h1 class="name gradient">TU NOMBRE ♡</h1>
+
+  <h2 style="font-size:1em;color:#7bbdd5">
+    Estudiante | Interesada en la tecnología
+  </h2>
+
+  <div class="info">
+    <p>
+      ¡Hola! Soy una persona curiosa y con muchas ganas
+      de aprender. Me interesa descubrir el mundo de la
+      tecnología, la informática y la ciberseguridad.
+      Este es mi espacio para compartir mis objetivos,
+      intereses y proyectos.
+    </p>
   </div>
+
+  <p class="decoration">✧ ୨୧ ✧ Bienvenidos a mi portafolio ✧ ୨୧ ✧</p>
+  <p class="subtitle">↓ Desliza para continuar ↓</p>
+
 </section>
 
-<!-- DIAPOSITIVA 3 -->
-<section data-background-gradient="linear-gradient(135deg, #164e63, #2563a6, #7045a3)">
-  <span class="tag">02 · IMPORTANCIA</span>
-  <h2>¿Por qué es importante?</h2>
-  <div class="card-grid">
-    <div class="card pink">
-      <div class="icon">👤</div>
-      <h3>Privacidad</h3>
-      <p>Protege nuestros datos personales y conversaciones.</p>
-    </div>
-    <div class="card blue">
-      <div class="icon">💳</div>
-      <h3>Información financiera</h3>
-      <p>Ayuda a proteger cuentas y datos bancarios.</p>
-    </div>
-    <div class="card purple">
-      <div class="icon">🏢</div>
-      <h3>Organizaciones</h3>
-      <p>Protege los sistemas y archivos de empresas e instituciones.</p>
-    </div>
-    <div class="card yellow">
-      <div class="icon">📱</div>
-      <h3>Dispositivos</h3>
-      <p>Reduce los riesgos al utilizar celulares y computadoras.</p>
-    </div>
+<!-- PÁGINA 2: OBJETIVOS -->
+<section data-background-color="#effaff">
+
+  <span class="tag">01 · MIS METAS</span>
+
+  <h2>Mis objetivos para aprender <span class="gradient">ciberseguridad</span></h2>
+
+  <div class="emoji">💻🔐</div>
+
+  <div class="info blue">
+    <h3>♡ Aprender los fundamentos</h3>
+    <p>Comprender cómo funcionan las redes, los sistemas y la seguridad digital.</p>
   </div>
-</section>
 
-<!-- DIAPOSITIVA 4 -->
-<section data-background-gradient="linear-gradient(135deg, #701f54, #9b347d, #4338a8)">
-  <span class="tag">03 · AMENAZAS</span>
-  <h2>Principales amenazas digitales</h2>
-  <div class="card-grid">
-    <div class="card pink">
-      <div class="icon">🦠</div>
-      <h3>Malware</h3>
-      <p>Software malicioso diseñado para dañar dispositivos o robar información.</p>
-    </div>
-    <div class="card yellow">
-      <div class="icon">🎣</div>
-      <h3>Phishing</h3>
-      <p>Mensajes falsos que intentan engañar a las personas para obtener sus datos.</p>
-    </div>
-    <div class="card blue">
-      <div class="icon">🔓</div>
-      <h3>Robo de cuentas</h3>
-      <p>Acceso no autorizado a perfiles y servicios digitales.</p>
-    </div>
-    <div class="card purple">
-      <div class="icon">🕵️</div>
-      <h3>Espionaje digital</h3>
-      <p>Obtención de información privada sin autorización.</p>
-    </div>
+  <div class="info blue">
+    <h3>♡ Proteger la información</h3>
+    <p>Conocer cómo cuidar los datos personales y mantener una navegación segura.</p>
   </div>
-</section>
 
-<!-- DIAPOSITIVA 5 -->
-<section data-background-gradient="linear-gradient(135deg, #312e81, #6d28a8, #be408b)">
-  <span class="tag">04 · CIBERATAQUES</span>
-  <h2>Tipos de ciberataques</h2>
-  <div class="card-grid">
-    <div class="card pink">
-      <div class="icon">🎣</div>
-      <h3>Phishing</h3>
-      <p>Engaño mediante correos, mensajes o páginas falsas.</p>
-    </div>
-    <div class="card blue">
-      <div class="icon">🔐</div>
-      <h3>Ransomware</h3>
-      <p>Malware que bloquea o cifra información y exige un rescate.</p>
-    </div>
-    <div class="card purple">
-      <div class="icon">🌊</div>
-      <h3>DDoS</h3>
-      <p>Intento de interrumpir un servicio saturándolo con tráfico.</p>
-    </div>
-    <div class="card yellow">
-      <div class="icon">🔑</div>
-      <h3>Fuerza bruta</h3>
-      <p>Intentos repetidos de adivinar credenciales de acceso.</p>
-    </div>
+  <div class="info blue">
+    <h3>♡ Desarrollar habilidades</h3>
+    <p>Aprender herramientas y conocimientos que me permitan crecer en el ámbito tecnológico.</p>
   </div>
-</section>
 
-<!-- DIAPOSITIVA 6 -->
-<section data-background-gradient="linear-gradient(135deg, #075985, #2563a6, #7c3aed)">
-  <span class="tag">05 · PREVENCIÓN</span>
-  <h2>¿Cómo podemos protegernos?</h2>
-  <div class="card-grid">
-    <div class="card pink">
-      <div class="icon">🔑</div>
-      <h3>Contraseñas seguras</h3>
-      <p>Utilizar contraseñas largas y diferentes para cada cuenta.</p>
-    </div>
-    <div class="card blue">
-      <div class="icon">📲</div>
-      <h3>Verificación en dos pasos</h3>
-      <p>Activar una segunda capa de seguridad.</p>
-    </div>
-    <div class="card purple">
-      <div class="icon">🚫</div>
-      <h3>Evitar enlaces sospechosos</h3>
-      <p>Verificar los mensajes antes de abrir enlaces o archivos.</p>
-    </div>
-    <div class="card yellow">
-      <div class="icon">🔄</div>
-      <h3>Actualizar dispositivos</h3>
-      <p>Mantener el sistema y las aplicaciones actualizados.</p>
-    </div>
+  <div class="info blue">
+    <h3>♡ Seguir aprendiendo</h3>
+    <p>Investigar nuevas tecnologías y comprender los desafíos del mundo digital.</p>
   </div>
+
+  <p class="subtitle">Pequeños pasos, grandes conocimientos. ♡</p>
+
 </section>
 
-<!-- DIAPOSITIVA 7 -->
-<section data-background-gradient="linear-gradient(135deg, #7e22ce, #db2777, #ea7b42)">
-  <span class="tag">06 · REFLEXIÓN FINAL</span>
-  <div class="big-icon">🌎🛡️</div>
-  <h1>¡La seguridad digital comienza contigo!</h1>
-  <p>
-    La ciberseguridad es fundamental para proteger
-    nuestra privacidad, identidad e información.
-  </p>
+<!-- PÁGINA 3: INTERESES -->
+<section data-background-color="#fff4fa">
+
+  <span class="tag">02 · MIS GUSTOS</span>
+
+  <h2>Lo que me interesa ♡</h2>
+  <p class="subtitle">Tres áreas que despiertan mi curiosidad</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="emoji">🔐</div>
+      <h3>Ciberseguridad</h3>
+      <p>Me interesa conocer cómo se protegen los sistemas, las redes y la información digital.</p>
+    </div>
+
+    <div class="card blue">
+      <div class="emoji">💻</div>
+      <h3>Tecnología</h3>
+      <p>Me gusta descubrir herramientas digitales, innovación y nuevas tecnologías.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌐</div>
+      <h3>Informática</h3>
+      <p>Me interesa comprender cómo funcionan las computadoras, los programas y el Internet.</p>
+    </div>
+
+  </div>
+
+  <svg class="cat small" viewBox="0 0 100 100">
+    <g fill="#91d9f2">
+      <rect x="15" y="5" width="20" height="20"/>
+      <rect x="65" y="5" width="20" height="20"/>
+      <rect x="10" y="25" width="80" height="50"/>
+      <rect x="20" y="75" width="60" height="10"/>
+    </g>
+    <g fill="#fff">
+      <rect x="25" y="38" width="15" height="15"/>
+      <rect x="60" y="38" width="15" height="15"/>
+    </g>
+    <g fill="#53677d">
+      <rect x="30" y="43" width="7" height="7"/>
+      <rect x="65" y="43" width="7" height="7"/>
+      <rect x="45" y="60" width="10" height="5"/>
+    </g>
+  </svg>
+
+  <p class="decoration">♡ Aprender algo nuevo cada día ♡</p>
+
+</section>
+
+<!-- PÁGINA 4: EDUCACIÓN Y PROYECTOS -->
+<section data-background-color="#effaff">
+
+  <span class="tag">03 · MI TRAYECTORIA</span>
+
+  <h2>Educación y proyectos 📚</h2>
+
+  <div class="info blue">
+    <div class="emoji">🎓</div>
+    <h3>Mi educación</h3>
+    <p><b>Institución:</b> [Nombre de tu escuela]</p>
+    <p><b>Nivel:</b> [Tu grado académico]</p>
+    <p><b>Área de interés:</b> Tecnología y ciberseguridad</p>
+  </div>
+
+  <div class="info blue">
+    <div class="emoji">🖥️</div>
+    <h3>Mis proyectos</h3>
+    <p><b>Proyecto 1:</b> [Nombre y descripción de un trabajo]</p>
+    <p><b>Proyecto 2:</b> [Otro proyecto o actividad]</p>
+    <p><b>Proyecto 3:</b> [Una habilidad que estoy desarrollando]</p>
+  </div>
+
+  <p class="subtitle">Cada experiencia es una oportunidad para crecer. ♡</p>
+
+  <svg class="cat small" viewBox="0 0 100 100">
+    <g fill="#f5a6cb">
+      <rect x="15" y="5" width="20" height="20"/>
+      <rect x="65" y="5" width="20" height="20"/>
+      <rect x="10" y="25" width="80" height="50"/>
+      <rect x="20" y="75" width="60" height="10"/>
+    </g>
+    <g fill="#fff">
+      <rect x="25" y="38" width="15" height="15"/>
+      <rect x="60" y="38" width="15" height="15"/>
+    </g>
+    <g fill="#53677d">
+      <rect x="30" y="43" width="7" height="7"/>
+      <rect x="65" y="43" width="7" height="7"/>
+      <rect x="45" y="60" width="10" height="5"/>
+    </g>
+  </svg>
+
+</section>
+
+<!-- PÁGINA 5: CONTACTO -->
+<section data-background-color="#fff3f9">
+
+  <span class="tag">04 · CONECTEMOS</span>
+
+  <h1>¡Hablemos! 💌</h1>
+
+  <svg class="cat cat-float" viewBox="0 0 100 100">
+    <g fill="#91d9f2">
+      <rect x="15" y="5" width="20" height="20"/>
+      <rect x="65" y="5" width="20" height="20"/>
+      <rect x="10" y="25" width="80" height="50"/>
+      <rect x="20" y="75" width="60" height="10"/>
+    </g>
+    <g fill="#fff">
+      <rect x="25" y="38" width="15" height="15"/>
+      <rect x="60" y="38" width="15" height="15"/>
+    </g>
+    <g fill="#53677d">
+      <rect x="30" y="43" width="7" height="7"/>
+      <rect x="65" y="43" width="7" height="7"/>
+      <rect x="45" y="60" width="10" height="5"/>
+    </g>
+  </svg>
+
   <p class="subtitle">
-    Cada decisión responsable en Internet
-    contribuye a un mundo digital más seguro.
+    Puedes encontrarme en mis redes sociales:
   </p>
-  <br>
-  <h2 class="gradient-text">¡GRACIAS POR SU ATENCIÓN!</h2>
+
+  <div class="info">
+    <a class="social" href="https://instagram.com/" target="_blank">📷 Instagram</a>
+    <a class="social" href="https://github.com/" target="_blank">💻 GitHub</a>
+    <a class="social" href="https://linkedin.com/" target="_blank">💼 LinkedIn</a>
+  </div>
+
+  <p class="subtitle">
+    ¡Gracias por visitar mi portafolio!
+  </p>
+
+  <h2 class="gradient">♡ Hasta pronto ♡</h2>
+
+  <p class="decoration">🐱 ✧ 💗 ✧ 🐱</p>
+
 </section>
 
+</section>
 </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
 <script>
 Reveal.initialize({
   hash: true,
-  slideNumber: true,
-  transition: 'slide',
   controls: true,
   progress: true,
-  center: true,
+  slideNumber: 'c/t',
+  transition: 'slide',
+  navigationMode: 'linear',
   width: 1100,
-  height: 700
+  height: 750,
+  center: true,
+  keyboard: true
 });
 </script>
 
