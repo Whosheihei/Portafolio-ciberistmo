@@ -200,6 +200,77 @@ body {
   .reveal p { font-size: .65em; }
   .name { font-size: 2em !important; }
 }
+  
+/* ===== LETRAS MÁS GRANDES ===== */
+
+.reveal {
+  font-size: 38px !important;
+}
+
+.reveal h1 {
+  font-size: 2.5em !important;
+}
+
+.reveal h2 {
+  font-size: 1.8em !important;
+}
+
+.reveal h3 {
+  font-size: 1.1em !important;
+}
+
+.reveal p, .reveal li {
+  font-size: 0.85em !important;
+  line-height: 1.65 !important;
+}
+
+.card p, .info p {
+  font-size: 0.78em !important;
+}
+
+.tag {
+  font-size: 0.55em !important;
+}
+
+.social {
+  font-size: 0.85em !important;
+  padding: 16px 25px;
+}
+
+.name {
+  font-size: 3.2em !important;
+}
+
+.card {
+  padding: 28px 20px;
+}
+
+.info {
+  padding: 25px;
+}
+
+/* Ajustes para celulares */
+@media(max-width:650px) {
+  .reveal {
+    font-size: 25px !important;
+  }
+
+  .reveal h1 {
+    font-size: 2em !important;
+  }
+
+  .reveal h2 {
+    font-size: 1.5em !important;
+  }
+
+  .reveal p, .reveal li {
+    font-size: 0.85em !important;
+  }
+
+  .card p, .info p {
+    font-size: 0.78em !important;
+  }
+}
 </style>
 </head>
 
@@ -235,24 +306,25 @@ body {
     </g>
   </svg>
 
-  <h1 class="name gradient">TU NOMBRE ♡</h1>
+  <h1 class="name gradient">Heidi Zeng♡</h1>
 
   <h2 style="font-size:1em;color:#7bbdd5">
-    Estudiante | Interesada en la tecnología
+    Estudiante | Interesada en programar y aprender
   </h2>
 
   <div class="info">
     <p>
-      ¡Hola! Soy una persona curiosa y con muchas ganas
-      de aprender. Me interesa descubrir el mundo de la
-      tecnología, la informática y la ciberseguridad.
+      ¡Hola! Soy una persona tranquila y con muchas ganas
+      de aprender todo sobre la tecnología. Me interesa
+      descubrir el mundo de la tecnología, saber cómo funciona
+      mis dispositivos y posibles amenazas que me pueden afectar.
       Este es mi espacio para compartir mis objetivos,
-      intereses y proyectos.
+      intereses y proyectos. Lo más importante es para que me conozcan mejor.
     </p>
   </div>
 
   <p class="decoration">✧ ୨୧ ✧ Bienvenidos a mi portafolio ✧ ୨୧ ✧</p>
-  <p class="subtitle">↓ Desliza para continuar ↓</p>
+  <p class="subtitle">↓ sigue bajando, POR FAVOR ↓</p>
 
 </section>
 
@@ -351,20 +423,20 @@ body {
   <div class="info blue">
     <div class="emoji">🎓</div>
     <h3>Mi educación</h3>
-    <p><b>Institución:</b> [Nombre de tu escuela]</p>
-    <p><b>Nivel:</b> [Tu grado académico]</p>
-    <p><b>Área de interés:</b> Tecnología y ciberseguridad</p>
+    <p><b>Institución:</b> Panama Christian Academy </p>
+    <p><b>Nivel:</b> Décimo grado, bachiller de ciencia </p>
+    <p><b>Área de interés:</b> Robótica y Coding </p>
   </div>
 
   <div class="info blue">
     <div class="emoji">🖥️</div>
     <h3>Mis proyectos</h3>
-    <p><b>Proyecto 1:</b> [Nombre y descripción de un trabajo]</p>
-    <p><b>Proyecto 2:</b> [Otro proyecto o actividad]</p>
-    <p><b>Proyecto 3:</b> [Una habilidad que estoy desarrollando]</p>
+    <p><b>Proyecto 1:</b> [industrial robot hand]</p>
+    <p><b>Proyecto 2:</b> [Natural disaster detector machine]</p>
+    <p><b>Proyecto 3:</b> [automatization robot]</p>
   </div>
 
-  <p class="subtitle">Cada experiencia es una oportunidad para crecer. ♡</p>
+  <p class="subtitle">Solo tengo experiencia dentro del colegio, me gustaría tener esta oportunidad de trabaja fuera del colegio. ♡</p>
 
   <svg class="cat small" viewBox="0 0 100 100">
     <g fill="#f5a6cb">
@@ -416,9 +488,9 @@ body {
   </p>
 
   <div class="info">
-    <a class="social" href="https://instagram.com/" target="_blank">📷 Instagram</a>
-    <a class="social" href="https://github.com/" target="_blank">💻 GitHub</a>
-    <a class="social" href="https://linkedin.com/" target="_blank">💼 LinkedIn</a>
+    <a class="social" href="https://instagram.com/" target="_blank">📷 Instagram: heiii_zh</a>
+    <a class="social" href="https://github.com/" target="_blank">💻 GitHub: Whosheihei</a>
+    <a class="social" href="https://linkedin.com/" target="_blank">💼 Gmail: heidiviczeng@gmail.com</a>
   </div>
 
   <p class="subtitle">
@@ -440,16 +512,22 @@ body {
 <script>
 Reveal.initialize({
   hash: true,
-  controls: true,
+  controls: false,
   progress: true,
   slideNumber: 'c/t',
+
   transition: 'slide',
-  navigationMode: 'linear',
+  navigationMode: 'default',
+
+  mouseWheel: true,
+
   width: 1100,
   height: 750,
   center: true,
-  keyboard: true
+  keyboard: true,
+  touch: true
 });
+
 </script>
 
 </body>
